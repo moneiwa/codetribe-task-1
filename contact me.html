@@ -53,7 +53,7 @@
 <title>social change assistance trust</title>
 </head>
 <style>
-Body { background-image: url(ewa.jpg);
+Body { background-image: url(ewaa.jpg);
 background-size: none;
 }
 .button {
@@ -78,7 +78,15 @@ background-size: none;
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+  </script>
 </body>
 <style>
 footer {
@@ -147,8 +155,8 @@ th {
     <td> fax - +27 (0) 78 044 3882</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>city / province</td>
+    <td>Polokwane Limpopo</td>
   </tr>
   <tr>
     <td>social media links </td>
@@ -227,6 +235,42 @@ th {
  
   <a href="https://www.instagram.com/muneiwa_cthagu?igsh=YTQwZjQ0Nml0oA==" class="fa fa-instagram"></a>
 
+
+
+
+  
+</head><br>
+<body>
+<form name="myForm" action="mailto:mhsithagu@gmail.com" onsubmit="return validateForm()" method="post" enctype="mailto:mhsithagu@gmail.com/form-data" name= " Eailform">
+<h1 style="color:#64002f;">submit your details in this form </p></h1>
+<div>
+<form>
+<label for="type"> Choose type:</label>
+<select id="type" name="type">
+  <option value="sponsors">sponsors</option>
+  <option value="volunteers">volunteers</option>
+  <option value="clientt">client</option>
+ 
+</select><br>
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="Eaddress">E-mail address:</label><br>
+  <input  type="text" id=" Eaddress" address="Eaddress" value=""><br>
+  enquiry: <br>
+<textarea name="contactcet" rows="6" cols="20">
+</textarea>
+<br><b>
+  <label for="contact">contact:</label></br>
+ <input type="text" id="contact" contact="contact" value=""><br>
+  <p> click below to submit </p>
+ <input type="submit" value="Submit"> 
+  <p> click below to reset </p>
+  <button type="Reset" value="Reset">Reset</button>
+  
+</form> 
 </body>
 
 
