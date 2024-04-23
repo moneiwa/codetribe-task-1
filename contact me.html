@@ -53,7 +53,7 @@
 <title>social change assistance trust</title>
 </head>
 <style>
-Body { background-image: url(ewa.jpg);
+Body { background-image: url(ewaa.jpg);
 background-size: none;
 }
 .button {
@@ -78,7 +78,15 @@ background-size: none;
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+  </script>
 </body>
 <style>
 footer {
@@ -147,13 +155,8 @@ th {
     <td> fax - +27 (0) 78 044 3882</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>social media links </td>
-    <td></td>
-    <td></td>
+    <td>city / province</td>
+    <td>Polokwane Limpopo</td>
 </tr>
 
 
@@ -219,21 +222,64 @@ th {
 
       
 <body>
-        
-        
-  <!-- Add font awesome icons -->
-  <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
-  <a href="https://web.facebook.com/muneiwa.sithagu/about" class="fa fa-facebook"></a>
- 
-  <a href="https://www.instagram.com/muneiwa_cthagu?igsh=YTQwZjQ0Nml0oA==" class="fa fa-instagram"></a>
 
-</body>
+
+
+  
+</head><br>
+<body>
+
+
+<div id="content"
+<h1>contact me</h1>
+<br><b></b>
+<br><b></b>
+<!-- modify this form HTML and place wherever you want your form -->
+<form onsubmit="handleformSubmit (event)"
+>
+
+<label>
+  Your first name:
+  <input type="first name" name="first name" required>
+</label>
+<br><b></b>
+<br><b></b>
+<label>
+  Your last name:
+  <input type="last name" name="last name" required>
+</label>
+<br><b></b>
+<br><b></b>
+
+  <label>
+    Your message :
+    <textarea name="message" required></textarea>
+  </label>
+  <br><b>
+    <br><b></b>
+   <label>
+    Your email  :
+    <input type="email" name="email" required>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+</div>
+  
 
 
 
 
 
 <footer>
+          
+  <!-- Add font awesome icons -->
+  <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+  <a href="https://web.facebook.com/muneiwa.sithagu/about" class="fa fa-facebook"></a>
+ 
+  <a href="https://www.instagram.com/muneiwa_cthagu?igsh=YTQwZjQ0Nml0oA==" class="fa fa-instagram"></a>
+
+
   <p>Author: sithagu muneiwa<br>
   <a href="mailto:mhsithagu@gmail.com/">mhsithagu@gmail.com</a></p>
   </footer></div>
